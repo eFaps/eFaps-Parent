@@ -189,16 +189,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven.surefire.version}</version>
-                <configuration>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                </configuration>
-            </plugin>
-
-             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>${maven.release.version}</version>
                 <configuration>
