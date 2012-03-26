@@ -42,7 +42,12 @@
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
          -->
-        <commons.dbcp.version>1.4</commons.dbcp.version>
+         <commons.dbcp.version>1.4</commons.dbcp.version>
+         <!--
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+          -->
+        <logback.version>1.0.1</logback.version>
         <maven.javadoc.version>2.8.1</maven.javadoc.version>
         <maven.surefire.version>2.11</maven.surefire.version>
         <maven.source.version>2.1.2</maven.source.version>
@@ -51,6 +56,7 @@
         <maven.release.version>2.2.1</maven.release.version>
         <maven.checkstyle.version>2.8</maven.checkstyle.version>
         <maven.efaps.version>3.0.0-8.1.2.v20120308-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.jetty.version>2.0.0-8.1.2.v20120308-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
 
     <licenses>
