@@ -29,10 +29,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
+    <url>http://www.efaps.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
