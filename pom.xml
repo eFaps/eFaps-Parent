@@ -56,7 +56,7 @@
         <maven.gpg.version>1.4</maven.gpg.version>
         <maven.release.version>2.2.1</maven.release.version>
         <maven.checkstyle.version>2.8</maven.checkstyle.version>
-        <maven.efaps.version>3.0.0-8.1.2.v20120308</maven.efaps.version>
+        <maven.efaps.version>3.0.1-8.1.2.v20120308-SNAPSHOT</maven.efaps.version>
         <maven.efaps.jetty.version>2.0.0-8.1.2.v20120308</maven.efaps.jetty.version>
    </properties>
 
