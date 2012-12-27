@@ -48,14 +48,14 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
           -->
-        <logback.version>1.0.7</logback.version>
-        <maven.javadoc.version>2.8.1</maven.javadoc.version>
-        <maven.surefire.version>2.11</maven.surefire.version>
-        <maven.source.version>2.1.2</maven.source.version>
+        <logback.version>1.0.9</logback.version>
+        <maven.javadoc.version>2.9</maven.javadoc.version>
+        <maven.surefire.version>2.12.4</maven.surefire.version>
+        <maven.source.version>2.2.1</maven.source.version>
         <maven.deploy.version>2.7</maven.deploy.version>
         <maven.gpg.version>1.4</maven.gpg.version>
-        <maven.release.version>2.2.1</maven.release.version>
-        <maven.checkstyle.version>2.8</maven.checkstyle.version>
+        <maven.release.version>2.4</maven.release.version>
+        <maven.checkstyle.version>2.9.1</maven.checkstyle.version>
         <maven.efaps.version>3.0.3-8.1.4.v20120524</maven.efaps.version>
         <maven.efaps.jetty.version>2.0.1-8.1.4.v20120524</maven.efaps.jetty.version>
    </properties>
@@ -275,7 +275,7 @@
                                 <artifactId>maven-checkstyle-plugin</artifactId>
                                 <version>${maven.checkstyle.version}</version>
                                 <configuration>
-                                    <configLocation>${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
+                                    <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
                                     <excludes>**/javacc/**/*.java</excludes>
                                 </configuration>
                             </plugin>
@@ -321,7 +321,16 @@
                             <version>1.8</version>
                         </dependency>
                     </dependencies>
-                </plugin>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <version>${maven.checkstyle.version}</version>
+                        <configuration>
+                            <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
+                            <excludes>**/javacc/**/*.java</excludes>
+                        </configuration>
+                    </plugin>
             </plugins>
         </pluginManagement>
     </build>
