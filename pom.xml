@@ -117,6 +117,9 @@
         </repository>
     </distributionManagement>
 
+    <prerequisites>
+       <maven>3.0.4</maven>
+    </prerequisites>
 
     <!-- ************************************************************************
     * Profiles
@@ -223,7 +226,6 @@
                         <mavenExecutorId>forked-path</mavenExecutorId>
                     </configuration>
                 </plugin>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
