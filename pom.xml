@@ -29,7 +29,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.0</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
@@ -98,9 +98,9 @@
 
     <!-- SubVersion Repository -->
     <scm>
-        <connection>scm:svn:http://efaps.googlecode.com/svn/eFaps-parent/trunk</connection>
-        <developerConnection>scm:svn:https://efaps.googlecode.com/svn/eFaps-parent/trunk</developerConnection>
-        <url>http://efaps.googlecode.com/svn/eFaps-parent/</url>
+        <connection>scm:svn:http://efaps.googlecode.com/svn/eFaps-parent/tags/efaps-parent-3.0.0</connection>
+        <developerConnection>scm:svn:https://efaps.googlecode.com/svn/eFaps-parent/tags/efaps-parent-3.0.0</developerConnection>
+        <url>http://efaps.googlecode.com/svn/eFaps-parent/tags/efaps-parent-3.0.0</url>
     </scm>
 
     <!-- Distribution Repository -->
