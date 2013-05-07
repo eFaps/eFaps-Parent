@@ -29,7 +29,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
@@ -37,8 +37,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <efaps.app.dependencies>[3.0.0-SNAPSHOT,3.1.0-SNAPSHOT)</efaps.app.dependencies>
-        <jetty.version>8.1.9.v20130131</jetty.version>
+        <efaps.app.dependencies>[3.1.0-SNAPSHOT,3.2.0-SNAPSHOT)</efaps.app.dependencies>
+        <jetty.version>8.1.10.v20130312</jetty.version>
         <!--
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -56,8 +56,8 @@
         <maven.gpg.version>1.4</maven.gpg.version>
         <maven.release.version>2.4</maven.release.version>
         <maven.checkstyle.version>2.9.1</maven.checkstyle.version>
-        <maven.efaps.version>4.0.0-8.1.9.v20130131-SNAPSHOT</maven.efaps.version>
-        <maven.efaps.jetty.version>3.0.0-8.1.9.v20130131-SNAPHOST</maven.efaps.jetty.version>
+        <maven.efaps.version>4.1.0-8.1.9.v20130131-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.jetty.version>3.1.0-8.1.10.v20130312-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
 
     <licenses>
