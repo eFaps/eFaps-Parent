@@ -55,7 +55,6 @@
         <maven.deploy.version>2.7</maven.deploy.version>
         <maven.gpg.version>1.4</maven.gpg.version>
         <maven.release.version>2.4</maven.release.version>
-        <maven.checkstyle.version>2.9.1</maven.checkstyle.version>
         <maven.efaps.version>4.1.0-8.1.10.v20130312-SNAPSHOT</maven.efaps.version>
         <maven.efaps.jetty.version>3.1.0-8.1.10.v20130312-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
@@ -323,16 +322,21 @@
                             <version>1.8</version>
                         </dependency>
                     </dependencies>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-checkstyle-plugin</artifactId>
-                        <version>${maven.checkstyle.version}</version>
-                        <configuration>
-                            <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
-                            <excludes>**/javacc/**/*.java</excludes>
-                        </configuration>
-                    </plugin>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${maven.checkstyle.version}</version>
+                    <configuration>
+                        <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
+                        <excludes>**/javacc/**/*.java</excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
