@@ -38,7 +38,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <efaps.app.dependencies>[3.2.0-SNAPSHOT,3.3.0-SNAPSHOT)</efaps.app.dependencies>
-        <jetty.version>9.0.6.v20130930</jetty.version>
+        <jetty.version>9.0.7.v20131107</jetty.version>
         <!--
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
