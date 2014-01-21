@@ -38,7 +38,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <efaps.app.dependencies>[3.2.0-SNAPSHOT,3.3.0-SNAPSHOT)</efaps.app.dependencies>
-        <jetty.version>9.0.7.v20131107</jetty.version>
+        <jetty.version>9.1.1.v20140108</jetty.version>
         <!--
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -59,7 +59,7 @@
         <maven.checkstyle.version>2.10</maven.checkstyle.version>
         <maven.findbugs.version>2.5.2</maven.findbugs.version>
         <maven.efaps.version>4.2.0-SNAPSHOT</maven.efaps.version>
-        <maven.efaps.jetty.version>3.2.0-9.0.7.v20131107-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.jetty.version>3.2.0-9.1.1.v20140108-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
 
     <licenses>
