@@ -38,7 +38,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <efaps.app.dependencies>[3.2.0-SNAPSHOT,3.3.0-SNAPSHOT)</efaps.app.dependencies>
-        <jetty.version>9.1.1.v20140108</jetty.version>
+        <jetty.version>9.1.3.v20140225</jetty.version>
+        <jersey.version>2.7</jersey.version>
         <!--
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -49,7 +50,7 @@
             <artifactId>logback-classic</artifactId>
           -->
         <logback.version>1.0.13</logback.version>
-        <slf4j.version>1.7.5</slf4j.version>
+        <slf4j.version>1.7.6</slf4j.version>
         <maven.javadoc.version>2.9</maven.javadoc.version>
         <maven.surefire.version>2.16</maven.surefire.version>
         <maven.source.version>2.2.1</maven.source.version>
@@ -59,7 +60,7 @@
         <maven.checkstyle.version>2.10</maven.checkstyle.version>
         <maven.findbugs.version>2.5.2</maven.findbugs.version>
         <maven.efaps.version>4.2.0-SNAPSHOT</maven.efaps.version>
-        <maven.efaps.jetty.version>3.2.0-9.1.1.v20140108-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.jetty.version>3.2.0-9.1.3.v20140225-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
 
     <licenses>
