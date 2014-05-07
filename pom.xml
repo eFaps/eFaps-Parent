@@ -60,7 +60,7 @@
         <maven.checkstyle.version>2.10</maven.checkstyle.version>
         <maven.findbugs.version>2.5.2</maven.findbugs.version>
         <maven.efaps.version>4.2.0-SNAPSHOT</maven.efaps.version>
-        <maven.efaps.jetty.version>3.2.0-9.1.5.v20140505-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.jetty.version>3.2.0-9.1-SNAPSHOT</maven.efaps.jetty.version>
    </properties>
 
     <licenses>
