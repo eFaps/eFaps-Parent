@@ -39,7 +39,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <efaps.app.dependencies>[3.2.0-SNAPSHOT,3.3.0-SNAPSHOT)</efaps.app.dependencies>
-        <jetty.version>9.2.0.v20140526</jetty.version>
+        <jetty.version> 9.2.2.v20140723</jetty.version>
         <wicket.version>6.16.0</wicket.version>
         <jersey.version>2.7</jersey.version>
         <!--
@@ -53,8 +53,13 @@
           -->
         <logback.version>1.1.2</logback.version>
         <slf4j.version>1.7.7</slf4j.version>
+        <maven.clean.version>2.5</maven.clean.version>
+        <maven.install.version>2.5.1</maven.install.version>
+        <maven.jar.version>2.4</maven.jar.version>
+        <maven.clean.version>2.4</maven.clean.version>
+        <maven.resources.version>2.6</maven.resources.version>
         <maven.javadoc.version>2.9</maven.javadoc.version>
-        <maven.surefire.version>2.16</maven.surefire.version>
+        <maven.surefire.version>2.17</maven.surefire.version>
         <maven.source.version>2.2.1</maven.source.version>
         <maven.deploy.version>2.7</maven.deploy.version>
         <maven.gpg.version>1.4</maven.gpg.version>
@@ -213,7 +218,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Compiler Settings: - Java 1.6 is needed! -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -227,7 +231,22 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.4</version>
+                    <version>${maven.jar.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${maven.clean.version}</version>
+                </plugin>
+                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${maven.install.version}</version>
+                </plugin>
+                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven.resources.version}</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-release-plugin</artifactId>
@@ -363,7 +382,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>annotations</artifactId>
-                <version>2.0.3</version>
+                <version>3.0.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
