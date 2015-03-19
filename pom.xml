@@ -61,10 +61,11 @@
         <maven.deploy.version>2.7</maven.deploy.version>
         <maven.gpg.version>1.4</maven.gpg.version>
         <maven.release.version>2.4</maven.release.version>
-        <maven.checkstyle.version>2.10</maven.checkstyle.version>
+        <maven.checkstyle.version>2.14</maven.checkstyle.version>
         <maven.findbugs.version>2.5.2</maven.findbugs.version>
         <maven.efaps.version>4.2.0-SNAPSHOT</maven.efaps.version>
         <maven.efaps.jetty.version>3.2.0-9.2-SNAPSHOT</maven.efaps.jetty.version>
+        <buildtools.version>1.0.0-SNAPSHOT</buildtools.version>
    </properties>
 
     <licenses>
@@ -307,9 +308,16 @@
                                 <artifactId>maven-checkstyle-plugin</artifactId>
                                 <version>${maven.checkstyle.version}</version>
                                 <configuration>
-                                    <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
+                                    <configLocation>eFaps/checkstyle.xml</configLocation>
                                     <excludes>**/javacc/**/*.java</excludes>
                                 </configuration>
+                                <dependencies>
+                                    <dependency>
+                                        <groupId>org.efaps</groupId>
+                                        <artifactId>efaps-buildtools</artifactId>
+                                        <version>1.0.0</version>
+                                    </dependency>
+                                </dependencies>
                             </plugin>
                             <!-- PMD report -->
                             <plugin>
@@ -348,9 +356,16 @@
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>${maven.checkstyle.version}</version>
                     <configuration>
-                        <configLocation>file://${basedir}/src/checkstyle/efaps_checks.xml</configLocation>
+                        <configLocation>eFaps/checkstyle.xml</configLocation>
                         <excludes>**/javacc/**/*.java</excludes>
                     </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.efaps</groupId>
+                            <artifactId>efaps-buildtools</artifactId>
+                            <version>1.0.0</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
