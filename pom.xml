@@ -103,12 +103,11 @@
         <url>http://www.efaps.org</url>
     </organization>
 
-
-    <!-- SubVersion Repository -->
+    <!-- Git Repository -->
     <scm>
-        <connection>scm:svn:http://efaps.googlecode.com/svn/eFaps-parent/trunk</connection>
-        <developerConnection>scm:svn:https://efaps.googlecode.com/svn/eFaps-parent/trunk</developerConnection>
-        <url>http://efaps.googlecode.com/svn/eFaps-parent/</url>
+        <connection>scm:git:git://github.com/eFaps/eFaps-Parent.git</connection>
+        <developerConnection>scm:git:git@github.com:eFaps/eFaps-Parent.git</developerConnection>
+        <url>https://github.com/eFaps/eFaps-Parent/</url>
     </scm>
 
     <!-- Distribution Repository -->
