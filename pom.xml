@@ -226,6 +226,7 @@
                     <version>2.5.1</version>
                     <configuration>
                         <mavenExecutorId>forked-path</mavenExecutorId>
+                        <tagNameFormat>V@{project.version}</tagNameFormat>
                     </configuration>
                 </plugin>
                 <plugin>
