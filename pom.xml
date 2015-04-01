@@ -263,7 +263,6 @@
                     <version>2.15</version>
                     <configuration>
                         <configLocation>eFaps/checkstyle.xml</configLocation>
-                        <excludes>**/javacc/**/*.java</excludes>
                     </configuration>
                     <dependencies>
                         <dependency>
