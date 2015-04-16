@@ -127,6 +127,15 @@
                 </property>
             </activation>
             <build>
+                <resources>
+                    <resource>
+                        <directory>./</directory>
+                        <includes>
+                            <include>LICENSE.txt</include>
+                        </includes>
+                        <targetPath>META-INF</targetPath>
+                    </resource>
+                </resources>
                 <plugins>
                     <!-- No test.. -->
                     <plugin>
@@ -191,6 +200,15 @@
         </profile>
     </profiles>
     <build>
+        <resources>
+            <resource>
+                <directory>./</directory>
+                <includes>
+                    <include>LICENSE.txt</include>
+                </includes>
+                <targetPath>META-INF</targetPath>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
