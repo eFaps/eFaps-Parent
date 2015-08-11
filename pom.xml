@@ -16,11 +16,6 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 
-  Author:          The eFaps Team
-  Revision:        $Rev: 7401 $
-  Last Changed:    $Date: 2012-03-23 16:26:11 -0500 (Fri, 23 Mar 2012) $
-  Last Changed By: $Author: jorge.cueva@moxter.net $
-
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -48,7 +43,7 @@
         <maven.efaps.version>5.0.0-SNAPSHOT</maven.efaps.version>
         <slf4j.version>1.7.12</slf4j.version>
         <testng.version>6.9.4</testng.version>
-        <wicket.version>6.20.0</wicket.version>
+        <wicket.version>7.0.0</wicket.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <licenses>
