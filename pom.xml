@@ -45,6 +45,7 @@
         <testng.version>6.9.8</testng.version>
         <wicket.version>7.1.0</wicket.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <efaps.dataexporter.version>1.0.0-SNAPSHOT</efaps.dataexporter.version>
     </properties>
     <licenses>
         <license>
