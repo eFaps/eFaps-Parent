@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>5.0-beta-1</version>
+    <version>5.0.0.-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
@@ -88,7 +88,7 @@
         <connection>scm:git:git://github.com/eFaps/eFaps-Parent.git</connection>
         <developerConnection>scm:git:git@github.com:eFaps/eFaps-Parent.git</developerConnection>
         <url>https://github.com/eFaps/eFaps-Parent/</url>
-      <tag>V5.0-beta-1</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <!-- Distribution Repository -->
