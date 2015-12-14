@@ -28,7 +28,7 @@
     <description>eFaps is an Open Source ERP.</description>
     <url>http://www.efaps.org</url>
     <properties>
-        <buildtools.version>1.0.0</buildtools.version>
+        <buildtools.version>1.0.1</buildtools.version>
         <commons.collections.version>4.1</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
