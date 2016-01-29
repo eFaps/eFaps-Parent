@@ -314,6 +314,7 @@
                     <version>2.15</version>
                     <configuration>
                         <configLocation>eFaps/checkstyle.xml</configLocation>
+                        <includeResources>false</includeResources>
                     </configuration>
                     <dependencies>
                         <dependency>
