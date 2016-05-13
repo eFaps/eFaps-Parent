@@ -22,7 +22,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>5.0.0-SNAPSHOT</version>
+    <version>8.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
@@ -35,19 +35,19 @@
         <commons.lang.version>3.4</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
         <digester3.version>3.2</digester3.version>
-        <efaps.app.dependencies>[5.0.0-SNAPSHOT,5.1.0-SNAPSHOT)</efaps.app.dependencies>
+        <efaps.app.dependencies>[8.0.0-SNAPSHOT,8.1.0-SNAPSHOT)</efaps.app.dependencies>
         <efaps.dataexporter.version>1.1.1-SNAPSHOT</efaps.dataexporter.version>
         <jboss.jta.version>4.17.29.Final</jboss.jta.version>
         <jersey.version>2.22.2</jersey.version>
-        <jetty.version>9.2.15.v20160210</jetty.version>
+        <jetty.version>9.3.8.v20160314</jetty.version>
         <joda-time.version>2.9.3</joda-time.version>
         <logback.version>1.1.3</logback.version>
-        <maven.efaps.jetty.version>5.0.0-9.2-SNAPSHOT</maven.efaps.jetty.version>
-        <maven.efaps.version>5.0.0-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.jetty.version>8.0.0-9.3-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.version>8.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.20</slf4j.version>
+        <slf4j.version>1.7.21</slf4j.version>
         <testng.version>6.9.10</testng.version>
-        <wicket.version>7.2.0</wicket.version>
+        <wicket.version>7.3.0</wicket.version>
     </properties>
     <licenses>
         <license>
@@ -248,8 +248,8 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.2</version>
                     <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
+                        <source>1.8</source>
+                        <target>1.8</target>
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
@@ -388,7 +388,7 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>annotations</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.1u2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -417,7 +417,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
             </plugin>
-                            <!-- java doc -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -428,7 +427,6 @@
                     <detectLinks />
                 </configuration>
             </plugin>
-                            <!-- source code -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
@@ -443,17 +441,16 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
             -->
-                            <!-- PMD report -->
+            <!-- PMD report -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <configuration>
                     <linkXref>true</linkXref>
                     <sourceEncoding>utf-8</sourceEncoding>
-                    <targetJdk>1.7</targetJdk>
+                    <targetJdk>1.8</targetJdk>
                 </configuration>
             </plugin>
-                            <!-- findbugs report -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
