@@ -40,7 +40,7 @@
         <efaps.dataexporter.version>1.1.1-SNAPSHOT</efaps.dataexporter.version>
         <jboss.jta.version>4.17.42.Final</jboss.jta.version>
         <jersey.version>2.26</jersey.version>
-        <jetty.version>9.4.7.v20170914</jetty.version>
+        <jetty.version>9.4.8.v20171121</jetty.version>
         <joda-time.version>2.9.9</joda-time.version>
         <logback.version>1.2.3</logback.version>
         <maven.efaps.jetty.version>8.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
