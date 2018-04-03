@@ -49,7 +49,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <testng.version>6.14.2</testng.version>
         <wicket.version>8.0.0-M9</wicket.version>
-        <jackson.version>2.8.3</jackson.version>
+        <jackson.version>2.8.5</jackson.version>
         <hikaricp.version>2.7.8</hikaricp.version>
     </properties>
     <licenses>
