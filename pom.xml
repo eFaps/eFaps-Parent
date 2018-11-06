@@ -40,7 +40,7 @@
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.27</jersey.version>
         <jetty.version>9.4.12.v20180830</jetty.version>
-        <joda-time.version>2.10</joda-time.version>
+        <joda-time.version>2.10.1</joda-time.version>
         <logback.version>1.2.3</logback.version>
         <maven.efaps.jetty.version>8.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
         <maven.efaps.version>8.0.0-SNAPSHOT</maven.efaps.version>
@@ -94,10 +94,6 @@
         <url>https://github.com/eFaps/eFaps-Parent/</url>
       <tag>HEAD</tag>
     </scm>
-
-    <prerequisites>
-        <maven>3.5</maven>
-    </prerequisites>
 
     <!-- Distribution Repository -->
     <distributionManagement>
@@ -241,6 +237,30 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M2</version>
+                <executions>
+                    <execution>
+                        <id>enforcer</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3.5,)</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <version>1.8</version>
+                                </requireJavaVersion>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
         <pluginManagement>
             <plugins>
@@ -326,7 +346,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.13</version>
+                            <version>8.14</version>
                         </dependency>
                         <dependency>
                             <groupId>org.slf4j</groupId>
@@ -365,7 +385,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.22.0</version>
                     <configuration>
-                        <argLine>-Xmx1024m</argLine>
+                        <argLine>-Xmx2048m</argLine>
                         <classpathDependencyExcludes>
                             <classpathDependencyExclude>org.eclipse.jdt.core.compiler:ecj</classpathDependencyExclude>
                         </classpathDependencyExcludes>
