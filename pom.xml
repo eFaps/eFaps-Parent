@@ -31,7 +31,7 @@
         <commons.collections.version>4.3</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
-        <commons.lang.version>3.8.1</commons.lang.version>
+        <commons.lang.version>3.9</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
         <commons.text.version>1.6</commons.text.version>
         <digester3.version>3.2</digester3.version>
@@ -39,7 +39,7 @@
         <efaps.dataexporter.version>2.0.0-SNAPSHOT</efaps.dataexporter.version>
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.28</jersey.version>
-        <jetty.version>9.4.15.v20190215</jetty.version>
+        <jetty.version>9.4.16.v20190411</jetty.version>
         <joda-time.version>2.10.1</joda-time.version>
         <logback.version>1.2.3</logback.version>
         <maven.efaps.jetty.version>8.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
@@ -347,7 +347,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.18</version>
+                            <version>8.19</version>
                         </dependency>
                         <dependency>
                             <groupId>org.slf4j</groupId>
