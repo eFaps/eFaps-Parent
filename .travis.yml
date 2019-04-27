@@ -7,7 +7,7 @@ cache:
     - $HOME/.m2
 
 jdk:
-  - oraclejdk10
+  - oraclejdk11
   - openjdk11
 
 install:
