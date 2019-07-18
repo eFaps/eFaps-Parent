@@ -28,7 +28,7 @@
     <url>http://www.efaps.org</url>
     <properties>
         <buildtools.version>1.0.2</buildtools.version>
-        <commons.collections.version>4.3</commons.collections.version>
+        <commons.collections.version>4.4</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
         <commons.lang.version>3.9</commons.lang.version>
