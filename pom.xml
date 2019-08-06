@@ -43,7 +43,7 @@
         <joda-time.version>2.10.1</joda-time.version>
         <logback.version>1.2.3</logback.version>
         <maven.efaps.jetty.version>8.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
-        <maven.efaps.version>8.0.0-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.25</slf4j.version>
         <testng.version>6.14.3</testng.version>
