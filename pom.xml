@@ -48,7 +48,7 @@
         <slf4j.version>1.7.25</slf4j.version>
         <testng.version>7.0.0</testng.version>
         <wicket.version>8.6.1</wicket.version>
-        <wicketstuff.version>8.6.1</wicketstuff.version>
+        <wicketstuff.version>8.6.0</wicketstuff.version>
         <!-- jersey uses a 2.8.xx version therefore only the latest 2.8 form jackson -->
         <jackson.version>2.8.11</jackson.version>
         <hikaricp.version>3.4.1</hikaricp.version>
