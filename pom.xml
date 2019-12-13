@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright 2003 - 2018 The eFaps Team
+  Copyright 2003 - 2019 The eFaps Team
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -21,37 +21,37 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>11.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
     <url>http://www.efaps.org</url>
     <properties>
         <buildtools.version>1.0.2</buildtools.version>
-        <commons.collections.version>4.3</commons.collections.version>
+        <commons.collections.version>4.4</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
         <commons.lang.version>3.9</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
-        <commons.text.version>1.6</commons.text.version>
+        <commons.text.version>1.8</commons.text.version>
         <digester3.version>3.2</digester3.version>
-        <efaps.app.dependencies>[8.0.0-SNAPSHOT,8.1.0-SNAPSHOT)</efaps.app.dependencies>
+        <efaps.app.dependencies>[11.0.0-SNAPSHOT,11.1.0-SNAPSHOT)</efaps.app.dependencies>
         <efaps.dataexporter.version>2.0.0-SNAPSHOT</efaps.dataexporter.version>
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.28</jersey.version>
-        <jetty.version>9.4.19.v20190610</jetty.version>
-        <joda-time.version>2.10.1</joda-time.version>
+        <jetty.version>9.4.22.v20191022</jetty.version>
+        <joda-time.version>2.10.5</joda-time.version>
         <logback.version>1.2.3</logback.version>
-        <maven.efaps.jetty.version>8.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
-        <maven.efaps.version>8.0.0-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.jetty.version>11.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>1.7.25</slf4j.version>
-        <testng.version>6.14.3</testng.version>
-        <wicket.version>8.6.0</wicket.version>
+        <slf4j.version>1.7.29</slf4j.version>
+        <testng.version>7.0.0</testng.version>
+        <wicket.version>8.6.1</wicket.version>
         <wicketstuff.version>8.6.0</wicketstuff.version>
         <!-- jersey uses a 2.8.xx version therefore only the latest 2.8 form jackson -->
         <jackson.version>2.8.11</jackson.version>
-        <hikaricp.version>3.3.1</hikaricp.version>
+        <hikaricp.version>3.4.1</hikaricp.version>
     </properties>
     <licenses>
         <license>
@@ -268,11 +268,9 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.7.0</version>
+                    <version>3.8.0</version>
                     <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                        <encoding>UTF-8</encoding>
+                        <release>11</release>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -347,7 +345,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.19</version>
+                            <version>8.25</version>
                         </dependency>
                         <dependency>
                             <groupId>org.slf4j</groupId>
