@@ -46,7 +46,7 @@
         <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.29</slf4j.version>
-        <testng.version>7.0.0</testng.version>
+        <testng.version>7.1.0</testng.version>
         <wicket.version>8.6.1</wicket.version>
         <wicketstuff.version>8.6.0</wicketstuff.version>
         <!-- jersey uses a 2.8.xx version therefore only the latest 2.8 form jackson -->
