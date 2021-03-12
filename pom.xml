@@ -31,7 +31,7 @@
         <commons.collections.version>4.4</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
-        <commons.lang.version>3.11</commons.lang.version>
+        <commons.lang.version>3.12.0</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
         <commons.text.version>1.9</commons.text.version>
         <digester3.version>3.2</digester3.version>
@@ -40,18 +40,18 @@
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.31</jersey.version>
         <jetty.version>9.4.34.v20201102</jetty.version>
-        <joda-time.version>2.10.9</joda-time.version>
+        <joda-time.version>2.10.10</joda-time.version>
         <logback.version>1.2.3</logback.version>
         <maven.efaps.jetty.version>11.0.0-9.4-SNAPSHOT</maven.efaps.jetty.version>
         <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.7.30</slf4j.version>
-        <testng.version>7.3.0</testng.version>
+        <testng.version>7.4.0</testng.version>
         <wicket.version>9.2.0</wicket.version>
         <wicketstuff.version>9.2.0</wicketstuff.version>
         <!-- jersey uses a 2.10.xx version therefore only the latest 2.10 form jackson -->
         <jackson.version>2.10.4</jackson.version>
-        <hikaricp.version>3.4.5</hikaricp.version>
+        <hikaricp.version>4.0.3</hikaricp.version>
     </properties>
     <licenses>
         <license>
@@ -345,7 +345,7 @@
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>8.37</version>
+                            <version>8.41</version>
                         </dependency>
                         <dependency>
                             <groupId>org.slf4j</groupId>
@@ -423,7 +423,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.1.0</version>
+                <version>4.2.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
