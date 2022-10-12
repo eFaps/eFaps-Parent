@@ -41,12 +41,12 @@
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.35</jersey.version>
         <jetty.version>10.0.11</jetty.version>
-        <joda-time.version>2.10.14</joda-time.version>
+        <joda-time.version>2.11.2</joda-time.version>
         <logback.version>1.3.0-alpha16</logback.version>
         <maven.efaps.jetty.version>11.0.0-10.0-SNAPSHOT</maven.efaps.jetty.version>
         <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>2.0.0-alpha7</slf4j.version>
+        <slf4j.version>2.0.3</slf4j.version>
         <testng.version>7.6.1</testng.version>
         <wicket.version>9.10.0</wicket.version>
         <wicketstuff.version>9.10.0</wicketstuff.version>
@@ -424,7 +424,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.7.1</version>
+                <version>4.7.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
