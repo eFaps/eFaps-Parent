@@ -48,8 +48,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>2.0.3</slf4j.version>
         <testng.version>7.6.1</testng.version>
-        <wicket.version>9.10.0</wicket.version>
-        <wicketstuff.version>9.10.0</wicketstuff.version>
+        <wicket.version>9.12.0</wicket.version>
+        <wicketstuff.version>9.12.0</wicketstuff.version>
         <!-- jersey uses a 2.10.xx version therefore only the latest 2.10 form jackson -->
         <jackson.version>2.13.0</jackson.version>
         <hikaricp.version>5.0.1</hikaricp.version>
