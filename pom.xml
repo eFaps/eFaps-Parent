@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
     <artifactId>efaps-parent</artifactId>
-    <version>11.0.0-SNAPSHOT</version>
+    <version>17.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>eFaps Parent</name>
     <description>eFaps is an Open Source ERP.</description>
@@ -36,15 +36,15 @@
         <commons.text.version>1.9</commons.text.version>
         <commons.io.version>2.10.0</commons.io.version>
         <digester3.version>3.2</digester3.version>
-        <efaps.app.dependencies>[11.0.0-SNAPSHOT,11.1.0-SNAPSHOT)</efaps.app.dependencies>
+        <efaps.app.dependencies>[17.0.0-SNAPSHOT,17.1.0-SNAPSHOT)</efaps.app.dependencies>
         <efaps.dataexporter.version>2.0.0-SNAPSHOT</efaps.dataexporter.version>
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.35</jersey.version>
         <jetty.version>10.0.11</jetty.version>
         <joda-time.version>2.11.2</joda-time.version>
         <logback.version>1.3.0-alpha16</logback.version>
-        <maven.efaps.jetty.version>11.0.0-10.0-SNAPSHOT</maven.efaps.jetty.version>
-        <maven.efaps.version>11.0.0-SNAPSHOT</maven.efaps.version>
+        <maven.efaps.jetty.version>17.0.0-10.0-SNAPSHOT</maven.efaps.jetty.version>
+        <maven.efaps.version>17.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>2.0.4</slf4j.version>
         <testng.version>7.6.1</testng.version>
@@ -255,7 +255,7 @@
                                     <version>[3.5,)</version>
                                 </requireMavenVersion>
                                 <requireJavaVersion>
-                                    <version>11</version>
+                                    <version>17</version>
                                 </requireJavaVersion>
                             </rules>
                             <fail>true</fail>
@@ -271,7 +271,7 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
                     <configuration>
-                        <release>11</release>
+                        <release>17</release>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -385,7 +385,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M7</version>
                     <configuration>
-                        <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                        <argLine>-Xmx1024m</argLine>
                         <classpathDependencyExcludes>
                             <classpathDependencyExclude>org.eclipse.jdt.core.compiler:ecj</classpathDependencyExclude>
                         </classpathDependencyExcludes>
@@ -484,7 +484,7 @@
                 <configuration>
                     <linkXref>true</linkXref>
                     <sourceEncoding>utf-8</sourceEncoding>
-                    <targetJdk>11</targetJdk>
+                    <targetJdk>17</targetJdk>
                 </configuration>
             </plugin>
             <plugin>
