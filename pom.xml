@@ -41,12 +41,12 @@
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.40</jersey.version>
         <jetty.version>10.0.15</jetty.version>
-        <joda-time.version>2.11.2</joda-time.version>
+        <joda-time.version>2.12.5</joda-time.version>
         <logback.version>1.4.8</logback.version>
         <maven.efaps.jetty.version>17.0.0-10.0-SNAPSHOT</maven.efaps.jetty.version>
         <maven.efaps.version>17.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <slf4j.version>2.0.4</slf4j.version>
+        <slf4j.version>2.0.6</slf4j.version>
         <testng.version>7.6.1</testng.version>
         <wicket.version>9.12.0</wicket.version>
         <wicketstuff.version>9.12.0</wicketstuff.version>
