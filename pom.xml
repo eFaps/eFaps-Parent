@@ -31,7 +31,7 @@
         <commons.collections.version>4.4</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
-        <commons.lang.version>3.13.0</commons.lang.version>
+        <commons.lang.version>3.14.0</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
         <commons.text.version>1.10.0</commons.text.version>
         <commons.io.version>2.10.0</commons.io.version>
@@ -41,18 +41,18 @@
         <jboss.jta.version>4.17.43.Final</jboss.jta.version>
         <jersey.version>2.40</jersey.version>
         <jetty.version>10.0.15</jetty.version>
-        <joda-time.version>2.12.5</joda-time.version>
+        <joda-time.version>2.12.6</joda-time.version>
         <logback.version>1.4.11</logback.version>
         <maven.efaps.jetty.version>17.0.0-10.0-SNAPSHOT</maven.efaps.jetty.version>
         <maven.efaps.version>17.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>2.0.6</slf4j.version>
-        <testng.version>7.6.1</testng.version>
+        <testng.version>7.9.0</testng.version>
         <wicket.version>9.12.0</wicket.version>
         <wicketstuff.version>9.12.0</wicketstuff.version>
         <!-- check jersey version -->
         <jackson.version>2.15.2</jackson.version>
-        <hikaricp.version>5.0.1</hikaricp.version>
+        <hikaricp.version>5.1.0</hikaricp.version>
     </properties>
     <licenses>
         <license>
@@ -428,7 +428,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.7.2</version>
+                <version>4.8.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
