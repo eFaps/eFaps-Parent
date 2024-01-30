@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  Copyright 2003 - 2021 The eFaps Team
+    Copyright © 2003 - 2024 The eFaps Team (-)
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-  http://www.apache.org/licenses/LICENSE-2.0
+        http://www.apache.org/licenses/LICENSE-2.0
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.efaps</groupId>
@@ -94,7 +95,7 @@
         <connection>scm:git:git://github.com/eFaps/eFaps-Parent.git</connection>
         <developerConnection>scm:git:git@github.com:eFaps/eFaps-Parent.git</developerConnection>
         <url>https://github.com/eFaps/eFaps-Parent/</url>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <!-- Distribution Repository -->
@@ -158,7 +159,7 @@
                             <skip>true</skip>
                         </configuration>
                     </plugin>
-                   <!-- Attach Sources -->
+                    <!-- Attach Sources -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
@@ -194,7 +195,7 @@
                             <updateReleaseInfo>true</updateReleaseInfo>
                         </configuration>
                     </plugin>
-                     <!-- signing the artefact with gpg -->
+                    <!-- signing the artefact with gpg -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
@@ -260,6 +261,37 @@
                             </rules>
                             <fail>true</fail>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <configuration>
+                    <properties>
+                        <year>2003 - 2024</year>
+                        <owner>The eFaps Team</owner>
+                        <email>-</email>
+                    </properties>
+                    <licenseSets>
+                        <licenseSet>
+                            <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+                            <excludes>
+                                <exclude>**/README</exclude>
+                                <exclude>**/LICENSE.txt</exclude>
+                                <exclude>src/test/resources/**</exclude>
+                                <exclude>src/main/resources/**</exclude>
+                            </excludes>
+                        </licenseSet>
+                    </licenseSets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>license</id>
+                        <goals>
+                            <goal>format</goal>
+                        </goals>
+                         <phase>generate-sources</phase>
                     </execution>
                 </executions>
             </plugin>
@@ -386,7 +418,8 @@
                     <version>3.1.2</version>
                     <configuration>
                         <classpathDependencyExcludes>
-                            <classpathDependencyExclude>org.eclipse.jdt.core.compiler:ecj</classpathDependencyExclude>
+                            <classpathDependencyExclude>
+                                org.eclipse.jdt.core.compiler:ecj</classpathDependencyExclude>
                         </classpathDependencyExcludes>
                     </configuration>
                 </plugin>
@@ -405,7 +438,7 @@
                     <artifactId>maven-gpg-plugin</artifactId>
                     <version>1.6</version>
                 </plugin>
-                 <plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-source-plugin</artifactId>
                     <version>3.0.1</version>
@@ -419,6 +452,11 @@
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>0.8.10</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>4.3</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -475,7 +513,7 @@
                     <javadocDir>apidocs</javadocDir>
                 </configuration>
             </plugin>
-                            <!-- checkstyle
+            <!-- checkstyle
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
