@@ -1,7 +1,0 @@
-version: "2.3"
-dependencies: ./dependency-tree.yaml
-default:
-  build-command:
-    upstream: mvn clean install -DskipTests
-    #current: mvn clean install
-

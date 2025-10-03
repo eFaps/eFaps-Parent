@@ -1,6 +1,0 @@
-version: "2.3"
-dependencies:
-  - project: eFaps/eFaps-Parent
-  - project: eFaps/eFaps-Core
-    dependencies:
-      - project: eFaps/eFaps-Parent
