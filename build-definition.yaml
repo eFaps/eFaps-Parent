@@ -1,3 +1,4 @@
+version: "2.3"
 dependencies: ./dependency-tree.yaml
 default:
   build-command:
