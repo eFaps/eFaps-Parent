@@ -37,19 +37,17 @@ jobs:
 
 
   trigger-dependend:
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Build Chain
         id: build-chain
-        uses: ginxo/github-action-build-chain
+        uses: ginxo/github-action-build-chain@v3
         with:
-           definition-file: https://raw.githubusercontent.com/efaps/eFaps-Parent/master/build-definition.yaml
-         env:
-           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
-
+          definition-file: https://raw.githubusercontent.com/efaps/eFaps-Parent/master/build-definition.yaml
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
 
 
 
