@@ -32,9 +32,9 @@
         <commons.collections.version>4.5.0</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
-        <commons.lang.version>3.17.0</commons.lang.version>
+        <commons.lang.version>3.19.0</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
-        <commons.text.version>1.13.1</commons.text.version>
+        <commons.text.version>1.14.0</commons.text.version>
         <commons.io.version>2.10.0</commons.io.version>
         <digester3.version>3.2</digester3.version>
         <efaps.app.dependencies>[17.0.0-SNAPSHOT,17.1.0-SNAPSHOT)</efaps.app.dependencies>
@@ -467,7 +467,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.9.3</version>
+                <version>4.9.6</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
