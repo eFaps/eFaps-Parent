@@ -45,6 +45,8 @@ jobs:
         uses: kiegroup/github-action-build-chain@v3.5.9
         with:
           definition-file: https://raw.githubusercontent.com/efaps/eFaps-Parent/master/build-definition.yaml
+          flow-type: branch
+          logger-level: 'debug'
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
