@@ -1,0 +1,5 @@
+dependencies:
+  - project: eFaps/eFaps-Parent
+  - project: eFaps/eFaps-Core
+    dependencies:
+      - project: eFaps/eFaps-Parent

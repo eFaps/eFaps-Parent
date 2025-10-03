@@ -35,3 +35,21 @@ jobs:
       - name: Deploy
         run: mvn deploy -DskipTests -s mySettings.xml
 
+
+  trigger-dependend:
+    needs: build
+    steps:
+      - name: Build Chain
+        id: build-chain
+        uses: ginxo/github-action-build-chain
+        with:
+           definition-file: https://raw.githubusercontent.com/efaps/eFaps-Parent/master/build-definition.yaml
+         env:
+           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+
+
