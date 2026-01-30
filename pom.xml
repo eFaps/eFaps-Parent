@@ -32,9 +32,9 @@
         <commons.collections.version>4.5.0</commons.collections.version>
         <commons.dbcp.version>2.1.1</commons.dbcp.version>
         <commons.jexl.version>2.1.1</commons.jexl.version>
-        <commons.lang.version>3.19.0</commons.lang.version>
+        <commons.lang.version>3.20.0</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
-        <commons.text.version>1.14.0</commons.text.version>
+        <commons.text.version>1.15.0</commons.text.version>
         <commons.io.version>2.10.0</commons.io.version>
         <digester3.version>3.2</digester3.version>
         <efaps.app.dependencies>[17.0.0-SNAPSHOT,17.1.0-SNAPSHOT)</efaps.app.dependencies>
@@ -48,12 +48,12 @@
         <maven.efaps.version>17.0.0-SNAPSHOT</maven.efaps.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>2.0.17</slf4j.version>
-        <testng.version>7.11.0</testng.version>
+        <testng.version>7.12.0</testng.version>
         <wicket.version>9.18.0</wicket.version>
         <wicketstuff.version>9.18.0</wicketstuff.version>
         <!-- check jersey version -->
         <jackson.version>2.15.2</jackson.version>
-        <hikaricp.version>6.3.0</hikaricp.version>
+        <hikaricp.version>7.0.2</hikaricp.version>
     </properties>
     <licenses>
         <license>
@@ -467,7 +467,7 @@
             <dependency>
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-annotations</artifactId>
-                <version>4.9.6</version>
+                <version>4.9.9</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
