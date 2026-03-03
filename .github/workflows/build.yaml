@@ -5,6 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -43,7 +44,7 @@ jobs:
       contents: write
     strategy:
       matrix:
-        repo: ['eFaps/eFaps-Core', 'eFaps/eFaps-API']
+        repo: ['eFaps/eFaps-Core', 'eFaps/eFaps-API', 'eFaps/eFaps-EQL2', 'eFaps/eFaps-GraphQL', 'eFaps/eFaps-GraphQL-Install', 'eFaps/eFaps-Promotions-Engine']
     steps:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v4
