@@ -35,7 +35,6 @@
         <commons.lang.version>3.20.0</commons.lang.version>
         <commons.pool.version>2.4.2</commons.pool.version>
         <commons.text.version>1.15.0</commons.text.version>
-        <commons.io.version>2.10.0</commons.io.version>
         <digester3.version>3.2</digester3.version>
         <efaps.app.dependencies>[17.0.0-SNAPSHOT,17.1.0-SNAPSHOT)</efaps.app.dependencies>
         <efaps.dataexporter.version>3.0.0-SNAPSHOT</efaps.dataexporter.version>
@@ -473,6 +472,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-compress</artifactId>
                 <version>1.28.0</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.21.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
